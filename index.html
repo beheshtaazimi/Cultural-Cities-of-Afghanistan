@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Cities of Afghanistan</title>
+  <link rel="icon" href="Icons/Favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script>
+    function showConfirmation(event) {
+      event.preventDefault();
+      alert("Thank you! Your city has been submitted.");
+      event.target.reset();
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>Cultural Cities of Afghanistan</h1>
+      <p class="subtitle">Discover the rich tapestry of Afghan heritage</p>
+      <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#city-of-the-day">City of the Day</a>
+        <a href="#submit">Submit a City</a>
+        <a href="#afghan-culture-highlights">Afghan Culture Highlights</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>
+        Afghanistan's cities are vibrant centers of culture, history, and tradition. Each city tells a unique story through its architecture, cuisine, clothing, and customs.<br>
+        Explore the diverse cultural landscapes of Afghanistan's urban centers.
+      </p>
+      <div class="featured-cities">
+        <div class="city-card">
+          <img src="IMG/Kabul.jpg" alt="Cultural view of Kabul city">
+          <div class="city-content">
+            <h3>Kabul</h3>
+            <p><strong>Famous For:</strong> Babur Gardens (Bagh-e Babur) and National Museum</p>
+            <p><strong>Food:</strong> Kabuli Pulao, Bolani, Mantu, and Ashak</p>
+            <p><strong>Clothing:</strong> Traditional Afghan perahan tunban</p>
+            <p class="idiom">"تا توانی دلی بدست آور، دل شکستن هنر نمی باشد." – Win as many hearts as you can, for breaking hearts is no art.</p>
+          </div>
+        </div>
+        <div class="city-card">
+          <img src="IMG/Herat City.jpg" alt="Historic Herat Architecture">
+          <div class="city-content">
+            <h3>Herat</h3>
+            <p><strong>Famous For:</strong> Herat Citadel (Qala Ikhtiaruddin), Islamic art</p>
+            <p><strong>Food:</strong> Kecheri Quroot, Kofta, Shorba</p>
+            <p><strong>Clothing:</strong> Embroidered Herati dresses</p>
+            <p class="idiom">"صبر تلخ است، ولیکن برِ شیرین دارد" – Patience is bitter, but its fruit is sweet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="city-gallery">
+      <h2>City Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="IMG/Mazar's Night.jpg" alt="Blue Mosque Mazar-i-Sharif">
+          <h3>Mazar-i-Sharif</h3>
+          <p>Known for the Blue Mosque and Nowruz festival.</p>
+          <p class="idiom">"شب در میان است، خدا مهربان است" – Even in the middle of the night, God is kind.</p>
+        </div>
+        <div class="gallery-card">
+          <img src="IMG/Bamyan.jpg" alt="Bamyan Buddha ruins">
+          <h3>Bamyan</h3>
+          <p>Home to the ancient Buddha statues and Hazara culture.</p>
+          <p class="idiom">"دنیا با امید زنده است" – The world is alive with hope.</p>
+        </div>
+        <div class="gallery-card">
+          <img src="IMG/Nangarhar.jpg" alt="Citrus fields in Nangarhar">
+          <h3>Nangarhar</h3>
+          <p>Land of citrus orchards and Pashto poetry.</p>
+          <p class="idiom">"انسان تر کانی کلک، او تر ګل نازک دی" – Humans can be tougher than a rock and more fragile than a flower.</p>
+        </div>
+        <div class="gallery-card">
+          <img src="IMG/Ghazni.jpg" alt="Ghazni fort and towers">
+          <h3>Ghazni</h3>
+          <p>Known for historical forts and Islamic scholars.</p>
+          <p class="idiom">"با یک گل بهار نمی شود" – One flower does not bring spring.</p>
+        </div>
+        <div class="gallery-card">
+          <img src="IMG/Badakhshan.jpg" alt="Badakhshan mountain range">
+          <h3>Badakhshan</h3>
+          <p>Famous for lapis lazuli mines and mountainous beauty.</p>
+          <p class="idiom">"خون با خون شسته نمی شود" – Blood Cannot be Washed Out with Blood.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="city-of-the-day" class="city-of-the-day">
+      <h2>City of the Day: Kandahar</h2>
+      <div class="city-feature">
+        <img src="IMG/Kandahar.jpg" alt="Kandahar shrine and street life">
+        <div class="city-info">
+          <h3>Kandahar</h3>
+          <ul>
+            <li>Known for the Shrine of the Cloak.</li>
+            <li>Rich Pashtun traditions and historical influence.</li>
+            <li>Popular for juicy pomegranates and traditional music.</li>
+          </ul>
+          <p class="idiom">"هر چاته خپل وطن کشمیر دی" – Everyone's own country is <br> Kashmir to him.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="submit" class="submit-section">
+      <h2>Submit a City</h2>
+      <form onsubmit="showConfirmation(event)">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="city">City Name:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="detail">Cultural Details:</label>
+        <textarea id="detail" name="detail" placeholder="Describe food, clothes, events, or traditions" required></textarea>
+
+        <label for="idiom">Local Idiom or Saying:</label>
+        <input type="text" id="idiom" name="idiom" placeholder="E.g., که غر هم وي، پر هوش يې وتړی – Even a mountain can be climbed with wisdom">
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="afghan-culture-highlights" class="afghan-culture">
+      <h2>Afghan Culture Highlights</h2>
+      <div class="culture-grid">
+        <div class="culture-card">
+          <h3>Traditional Foods</h3>
+          <img src="IMG/Afghan Foods.jpg" alt="Afghan traditional food">
+          <p>From Kabuli Pulao to Mantu, Afghan food is rich with spices and flavors. Meals are often served with naan and yogurt-based sides.</p>
+        </div>
+        <div class="culture-card">
+          <h3>Traditional Clothing</h3>
+          <img src="IMG/Afghan Clothes.jpg" alt="Traditional Afghan dress">
+          <p>Men wear perahan tunban, and women wear colorful dresses with detailed embroidery, often matched with scarves and jewelry.</p>
+        </div>
+        <div class="culture-card">
+          <h3>Festivals</h3>
+          <img src="IMG/Afghanistan's Festivals.jpg" alt="Afghan Nowruz Festival">
+          <p>Afghans celebrate Nowruz, Eid, and Independence Day with music, food, and family gatherings. Kite flying is a favorite pastime.</p>
+        </div>
+        <div class="culture-card">
+          <h3>Music & Dance</h3>
+          <img src="IMG/Afghan Music.jpg" alt="Afghan musical performance">
+          <p>Rubab and tabla are iconic Afghan instruments. The traditional dance Attan is performed during joyful celebrations and weddings.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-socials">
+      <p><strong>Questions?</strong> We'd love to hear from you!</p>
+      <a href="https://github.com/beheshtaazimi" target="_blank"><img src="Icons/github-svgrepo-com.svg" alt="GitHub"></a>
+      <a href="https://x.com/beheshtaazimi?s=21" target="_blank"><img src="Icons/x-symbol-svgrepo-com.svg" alt="X"></a>
+      <a href="mailto:azimi.beheshta@gmail.com"><img src="Icons/email-svgrepo-com.svg" alt="Email"></a>
+      <a href="https://www.linkedin.com/in/beheshta-azimi-634539346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="Icons/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Cultural Cities of Afghanistan. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
